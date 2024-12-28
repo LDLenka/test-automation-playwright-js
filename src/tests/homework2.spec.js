@@ -16,11 +16,9 @@ async function vyplnFormularPrihlaseni(page) {
 
   let firstDate = new Date();
   firstDate.setDate(today.getDate() + 7);
-  console.log(firstDate);
 
   let lastDate = new Date();
   lastDate.setDate(today.getDate() + 14);
-  console.log(lastDate)
 
   await page.getByLabel('IČO').fill(ico);
   //pridan wait pro cekani na chybu ARES
